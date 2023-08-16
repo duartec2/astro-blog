@@ -1,3 +1,31 @@
 ---
-$END$
----
+
+import MiniBlob from "./MiniBlob.astro";---
+<nav class="sticky top-0 z-50 flex justify-between px-10 py-4 w-full bg-zinc-950">
+    <div class="space-x-6">
+        <a href="#about" class="selected">
+                About me
+        </a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+        Theme
+    </div>
+
+</nav>
+
+<script>
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (ev){
+            document.querySelectorAll('.selected').forEach(selected => {
+                selected.classList.remove('selected');
+            });
+            ev.target.classList.add('selected');
+        })
+    })
+</script>

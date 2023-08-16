@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-zinc-950 font-lato text-white min-h-screen;
+    }
+
+    h1 {
+        @apply font-syne text-6xl font-bold;
+    }
+
+    h2 {
+        @apply font-syne text-3xl;
+    }
+
+    p:not(:last-child) {
+        @apply pb-6;
+    }
+
+    section {
+        @apply min-h-screen bg-zinc-950 py-12 px-10;
+    }
+
+    footer {
+        @apply text-zinc-400 drop-shadow-2xl
+    }
+
+    nav a {
+        @apply py-2 text-white font-semibold tracking-wide hover:text-cyan-500 duration-500 transition;
+    }
+
+    nav a.selected {
+        @apply text-pink-600 duration-500 transition
+    }
+
+    a {
+        @apply underline tracking-wide hover:text-cyan-500 duration-500 transition;
+    }
+
+
+}
+
+
+

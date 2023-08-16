@@ -1,15 +1,96 @@
 ---
+import '../styles/global.css';
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import About from "./about.astro";
+import Navigation from "../components/Navigation.astro";
 ---
+<DefaultLayout title="Index">
+    <div style="display: unset">
+        <section id="about">
+            <About/>
+        </section>
+        <section id="projects">
+            <h2>Section 2</h2>
+        </section>
+        <section id="blog">
+            <h2>Section 3</h2>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+            <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum molestias neque nobis
+                voluptates? A consequatur delectus ipsam provident tempore. Ab accusamus animi aperiam asperiores
+                aspernatur beatae consectetur consequatur dicta dignissimos distinctio eligendi impedit iste magni neque
+                nisi optio, pariatur quam quis similique voluptatum? Animi blanditiis cupiditate deleniti doloremque
+                dolorum ea eligendi eos, eum in iure, laudantium nulla pariatur provident quos sequi vero voluptate
+                voluptates? A amet animi architecto beatae consequuntur cumque dicta dolor dolorem ea earum eos est eum
+                eveniet expedita facere hic, illo impedit incidunt iure maxime molestiae nam nemo perferendis possimus
+                praesentium qui quia quos ratione rem saepe sed similique sint suscipit tempora totam vitae voluptates.
+                Est itaque officia placeat possimus recusandae ullam. Accusamus amet cum dicta dolores explicabo fuga
+                illum, itaque laudantium neque possimus quibusdam quo quos ratione rem rerum suscipit tempora! Amet aut
+                autem commodi consectetur distinctio exercitationem maiores, modi neque perferendis placeat, rem sit
+                sunt.</p>
+            <p class="pb-4">Aliquid itaque non nulla ut! A aliquid corporis cumque dolore earum, ex id, laboriosam minus
+                modi possimus quae sit voluptate. Accusamus accusantium alias aliquid consequatur dicta enim, hic minima
+                nemo omnis porro quam quia quibusdam ratione, sed similique suscipit ullam? Cupiditate doloremque, eum
+                explicabo fugiat labore libero maxime nisi nostrum odio placeat similique suscipit totam vitae! Animi,
+                aspernatur at atque commodi consequuntur cum delectus doloremque ea esse excepturi expedita fugit illum
+                impedit ipsam itaque laboriosam laborum laudantium minus molestiae necessitatibus nihil nobis officia
+                omnis perspiciatis possimus provident quae quibusdam, quo reprehenderit rerum sed sit sunt tempora unde
+                vero voluptas voluptate. Alias blanditiis commodi consequatur cum dolore dolorum ea eaque error
+                explicabo fuga iste maxime minima odit porro quasi quibusdam quos, reiciendis repellat repellendus
+                reprehenderit rerum sequi temporibus vel veritatis voluptatum! Earum fuga id, non placeat praesentium
+                quas? Ab cumque cupiditate eveniet explicabo labore laudantium, non numquam tempore tenetur veritatis
+                voluptatum.</p>
+            <p class="pb-4">Asperiores corporis expedita id in incidunt laudantium nisi rem, vel! Autem inventore
+                itaque, laudantium non possimus quod similique tenetur veniam? Aut, distinctio, sapiente! Accusamus
+                accusantium architecto autem consequuntur deserunt dicta dolor doloremque ea expedita facilis fuga illo
+                impedit inventore ipsam ipsum iste laudantium molestiae molestias mollitia, nam nihil nisi nobis
+                nostrum, obcaecati odio omnis perferendis porro quam recusandae sapiente, soluta suscipit velit
+                voluptatibus! Alias dignissimos doloremque ex, maiores natus obcaecati praesentium quis sed tempore
+                voluptates! A animi assumenda aut autem consequuntur doloremque doloribus dolorum ea earum est eum ex
+                excepturi explicabo illo incidunt inventore ipsa iure, labore libero nam nisi numquam optio possimus
+                provident quae quas quasi quo quod ratione repellendus sint suscipit, tempore temporibus totam ullam
+                voluptatem voluptatum? Accusantium alias animi at aut dignissimos dolorem eaque eligendi enim eum ex
+                fugiat, illum impedit modi molestiae molestias non, obcaecati pariatur quam quibusdam quod reiciendis
+                tempora totam unde, velit voluptas voluptatem.</p>
+            <p class="pb-4">Ab asperiores dignissimos dolore eveniet minus neque nostrum nulla quae quibusdam soluta
+                vel, voluptatibus voluptatum. Commodi esse ex laboriosam natus nihil odit perferendis repudiandae?
+                Magnam, nemo, sequi. Aspernatur, aut eum expedita fuga minus quis repudiandae. Accusamus autem
+                blanditiis, consequuntur dolores eaque esse, explicabo fugiat in incidunt libero natus nulla, numquam
+                obcaecati officiis provident quia tempore? Consequuntur libero mollitia suscipit ullam! Aspernatur esse
+                exercitationem ipsa maxime nemo nesciunt nisi quas quod totam, vero. A animi aperiam, aspernatur
+                assumenda corporis delectus dolores ea exercitationem impedit necessitatibus neque odit pariatur quas
+                soluta tempora voluptate voluptatem. Blanditiis corporis cum, cumque doloribus dolorum eum, ex explicabo
+                hic iure labore laudantium minima molestias odit officia optio perferendis quae quis quos ratione saepe
+                sequi sunt, suscipit tempora tenetur unde? A aliquam animi debitis delectus dolore dolorem earum hic, in
+                maiores mollitia, natus nemo non nulla odit quae quaerat quia reprehenderit sint sit vel veniam vero
+                vitae voluptate.</p>
+            <p class="pb-4">Ab amet beatae, facilis fuga harum repellat repellendus rerum sapiente tempora totam.
+                Adipisci asperiores autem, cumque, cupiditate debitis deserunt ducimus eveniet excepturi fuga harum
+                ipsum iste itaque possimus quae quasi sit tenetur! Ad amet consectetur consequatur ea ex explicabo
+                impedit laborum laudantium libero, maiores maxime minus molestiae, nihil nisi non nostrum obcaecati odio
+                officia perspiciatis quidem reprehenderit repudiandae rerum sed soluta suscipit voluptatem voluptatibus!
+                At culpa enim, error est eveniet ex itaque magni nam neque optio perspiciatis porro possimus quibusdam,
+                quos repellendus tempora ullam voluptatibus? A ab aperiam corporis, cum cumque dignissimos distinctio
+                dolorum eveniet fugiat iusto maiores, mollitia nostrum odit officia officiis perspiciatis praesentium
+                quas quibusdam quis reprehenderit repudiandae tempore tenetur, vel! Accusantium alias aperiam architecto
+                atque cum cupiditate debitis eligendi esse et fuga fugiat illum ipsa ipsam iure, laboriosam laborum,
+                libero, magni natus neque optio porro possimus quaerat recusandae rerum sit ullam voluptatem? Distinctio
+                molestiae nisi officia reprehenderit?</p>
+            <p class="pb-4">Consequatur eum expedita incidunt iure nesciunt praesentium temporibus voluptatem
+                voluptatum. Accusamus, aliquid architecto aspernatur beatae deleniti deserunt dicta dignissimos dolore
+                ducimus eligendi error esse eveniet facilis fugiat id itaque magni modi nemo nihil nisi non numquam
+                officiis omnis perferendis quia quidem reiciendis rem repudiandae sapiente tempora tenetur totam ut
+                veniam veritatis vero voluptates voluptatibus. Ad alias autem beatae dolores eaque est et expedita
+                labore nesciunt nostrum odit quibusdam quos sapiente, sint suscipit ullam vel. Distinctio, sint,
+                veritatis! Ab aspernatur assumenda culpa dignissimos dolores, est et labore nam, necessitatibus quas
+                ratione reprehenderit saepe, similique suscipit tempore velit voluptatum. Ab architecto dignissimos
+                dolore illo, laboriosam magni natus necessitatibus quae? Corporis deleniti error maxime numquam vero.
+                Architecto ea earum, itaque laudantium, molestiae natus obcaecati odio odit officiis quis reprehenderit
+                repudiandae voluptatem. Aperiam consequuntur ea impedit reiciendis repellendus sunt tempora voluptatum.
+                Culpa cum dolorem, dolores ipsam, libero maxime necessitatibus nesciunt quasi reprehenderit rerum
+                vitae!</p>
+        </section>
+        <section id="contact">
+            <h2>Contnact</h2>
+        </section>
+    </div>
+</DefaultLayout>
